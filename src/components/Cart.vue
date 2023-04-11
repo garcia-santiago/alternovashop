@@ -2,10 +2,11 @@
 import {useCart} from '../stores/cart.ts'
 import ProductCart from '../Types/ProductCart'
 import download from 'downloadjs'
+import { storeToRefs } from 'pinia'
 
 const storeCart = useCart()
 const productsCart = storeCart.getProducts
-const total = storeCart.getTotal
+const {total} = storeToRefs(storeCart);
 
 
 const createOrder = () => {
