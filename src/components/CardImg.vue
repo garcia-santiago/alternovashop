@@ -30,7 +30,7 @@ function addToCart(){
     })
 
     if(quantity.value+sum>self_product.stock){
-        mostrarMensaje('red', "No se puede agregar, no hay stock");
+        mostrarMensaje('red', `No se puede agregar, no hay suficiente stock (${self_product.stock-sum} unidades disponibles)`);
     }
     else{
         const newProduct = <ProductCart> {
