@@ -19,19 +19,28 @@ const createOrder = () => {
 </script>
 
 <template>
-<div class="flex flex-col gap-y-4" id="cart">
-    <h1>Cart</h1>
+<div class="flex flex-col gap-y-4 px-3" id="cart">
+    <div class="row-product-md font-bold">
+        <div>Cart</div>
+        <div>Quantity</div>
+        <div>Unit Price</div>
+        <div>Total Price</div>
+    </div>
     <div v-for="(product, index) in productsCart">
-        <div class="row-product">
+        <div class="row-product-md">
             <div>{{product.name}}</div>
             <div>{{product.quantity}}</div>
-            <div>{{product.unit_price}}</div>
-            <div>{{product.total_price}}</div>
+            <div>${{product.unit_price}}</div>
+            <div>${{product.total_price}}</div>
+        </div>
+        <div class="row-product-sm">
+            <div>{{product.name}} x {{product.quantity}}</div>
+            <div>${{product.total_price}}</div>
         </div>
     </div>
     <div class="flex justify-evenly mt-3">
         <div>
-            Total: <span class="underline"> {{total}} </span>
+            Total: <span class="underline"> ${{total}} </span>
         </div>
         <div>
             <a class="btn" @click="createOrder">
@@ -43,8 +52,10 @@ const createOrder = () => {
 
 </template>
 <style>
-.row-product{
-    display: grid;
-    grid-template-columns: 220px repeat(3, 1fr);
+.row-product-md{
+    @apply md:(grid grid-cols-[200px,1fr,1fr,1fr]) <sm:(hidden);
+}
+.row-product-sm{
+    @apply md:(hidden) <sm:(flex justify-between);
 }
 </style>

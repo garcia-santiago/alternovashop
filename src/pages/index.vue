@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="flex">
+  <section class="flex <sm:(flex-col-reverse)">
 
       <ProductsLayout />
 
@@ -13,7 +13,7 @@
 </template>
 <style>
 section > *{
-@apply md:w-1/2 <sm:(w-100);
+@apply md:(w-1/2) <sm:(w-full);
 }
 </style>
 
