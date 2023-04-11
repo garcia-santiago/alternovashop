@@ -1,0 +1,50 @@
+<script lang="ts" setup>
+import {useCart} from '../stores/cart.ts'
+import ProductCart from '../Types/ProductCart'
+import download from 'downloadjs'
+
+const storeCart = useCart()
+const productsCart = storeCart.getProducts
+const total = storeCart.getTotal
+
+
+const createOrder = () => {
+    const order = {
+        "products": productsCart,
+        "total_price": total
+    }
+    download(JSON.stringify(order), 'order.json', 'text/plain')
+}
+
+</script>
+
+<template>
+<div class="flex flex-col gap-y-4" id="cart">
+    <h1>Cart</h1>
+    <div v-for="(product, index) in productsCart">
+        <div class="row-product">
+            <div>{{product.name}}</div>
+            <div>{{product.quantity}}</div>
+            <div>{{product.unit_price}}</div>
+            <div>{{product.total_price}}</div>
+        </div>
+    </div>
+    <div class="flex justify-evenly mt-3">
+        <div>
+            Total: <span class="underline"> {{total}} </span>
+        </div>
+        <div>
+            <a class="btn" @click="createOrder">
+                CREATE ORDER
+            </a>
+        </div>
+    </div>
+</div>
+
+</template>
+<style>
+.row-product{
+    display: grid;
+    grid-template-columns: 220px repeat(3, 1fr);
+}
+</style>

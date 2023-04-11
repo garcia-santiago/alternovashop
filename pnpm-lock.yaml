@@ -9,6 +9,7 @@ specifiers:
   '@vueuse/core': ^6.9.2
   axios: ^0.23.0
   cross-env: ^7.0.3
+  downloadjs: ^1.4.7
   eslint: ^7.32.0
   marked: ^4.2.4
   pinia: ^2.0.28
@@ -27,6 +28,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 6.9.2_vue@3.2.47
   axios: 0.23.0
+  downloadjs: 1.4.7
   marked: 4.2.12
   pinia: 2.0.33_typescript@4.9.5+vue@3.2.47
   vue: 3.2.47
@@ -1201,6 +1203,10 @@ packages:
       domelementtype: 2.3.0
       domhandler: 4.3.1
     dev: true
+
+  /downloadjs/1.4.7:
+    resolution: {integrity: sha512-LN1gO7+u9xjU5oEScGFKvXhYf7Y/empUIIEAGBs1LzUq/rg5duiDrkuH5A2lQGd5jfMOb9X9usDa2oVXwJ0U/Q==}
+    dev: false
 
   /electron-to-chromium/1.4.333:
     resolution: {integrity: sha512-YyE8+GKyGtPEP1/kpvqsdhD6rA/TP1DUFDN4uiU/YI52NzDxmwHkEb3qjId8hLBa5siJvG0sfC3O66501jMruQ==}

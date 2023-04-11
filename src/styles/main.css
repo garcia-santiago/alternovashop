@@ -17,16 +17,3 @@ html{
     hover:bg-green-900
     disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
 }
-
-.link{
-  @apply inline-block cursor-pointer select-none
-    opacity-100 font-bold transition duration-200 ease-in-out
-    hover:opacity-100 hover:text-green-500;
-}
-.input{
-  @apply block mx-auto my-2 rounded text-blue-gray-700;
-}
-
-.cursiva{
-  font-family: 'Arizonia', cursive;
-}

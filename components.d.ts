@@ -7,15 +7,17 @@ declare module 'vue' {
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonLogoLinkedin: typeof import('~icons/carbon/logo-linkedin')['default']
     CarbonLogoPython: typeof import('~icons/carbon/logo-python')['default']
-    CardImg: typeof import('C:/SANTIAGO/Proyectos/sgarcia-tech/src/components/CardImg.vue')['default']
-    Divider: typeof import('C:/SANTIAGO/Proyectos/sgarcia-tech/src/components/Divider.vue')['default']
-    KanyeQuote: typeof import('C:/SANTIAGO/Proyectos/sgarcia-tech/src/components/KanyeQuote.vue')['default']
+    CardImg: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/CardImg.vue')['default']
+    Cart: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/Cart.vue')['default']
+    Divider: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/Divider.vue')['default']
+    KanyeQuote: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/KanyeQuote.vue')['default']
     MdiLanguagePhp: typeof import('~icons/mdi/language-php')['default']
     MdiNodejs: typeof import('~icons/mdi/nodejs')['default']
     MdiVuejs: typeof import('~icons/mdi/vuejs')['default']
-    ProyectosGrid: typeof import('C:/SANTIAGO/Proyectos/sgarcia-tech/src/components/ProyectosGrid.vue')['default']
-    SlideProyecto: typeof import('C:/SANTIAGO/Proyectos/sgarcia-tech/src/components/SlideProyecto.vue')['default']
-    Top: typeof import('C:/SANTIAGO/Proyectos/sgarcia-tech/src/components/Top.vue')['default']
+    ProductsLayout: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/ProductsLayout.vue')['default']
+    ProyectosGrid: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/ProyectosGrid.vue')['default']
+    SlideProyecto: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/SlideProyecto.vue')['default']
+    Top: typeof import('C:/SANTIAGO/Proyectos/alternovashop/src/components/Top.vue')['default']
   }
 }
 

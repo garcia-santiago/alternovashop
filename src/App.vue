@@ -1,6 +1,6 @@
 <template>
   <Top />
-  <main class="px-4 py-10 text-center">
+  <main class="py-10">
     <router-view />
   </main>
 </template>
