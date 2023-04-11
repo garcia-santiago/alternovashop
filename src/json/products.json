@@ -1,9 +1,9 @@
 {
     "products": 
     [
-        {"name": "Redbull","unit_price": 5000,"stock": 5, "img_url": "https://images.ctfassets.net/lcr8qbvxj7mh/2YFBOkIl3scPnFZGw8gLXz/e97cd77969e6ddd699aed3afb1ecb454/CUT-CO_RBED_250_Single-Unit_close_ambien.png"},
-        {"name": "Rice","unit_price": 2000,"stock": 0, "img_url": "https://grupodiana.co/wp-content/uploads/2019/12/arroz-valor01.png"},
-        {"name": "Papas Margarita de limón ","unit_price": 1500,"stock": 1, "img_url": "https://copservir.vtexassets.com/arquivos/ids/771951/PAPA-MARGARITA-LIMON_F.png?v=637951129187230000"},
-        {"name": "Meat / Pound","unit_price": 500,"stock": 8, "img_url": "https://lecarnegourmet.com/wp-content/uploads/2022/07/costilla-le-carne.jpg"}
+        {"name": "Redbull","unit_price": 5000,"stock": 5},
+        {"name": "Rice","unit_price": 2000,"stock": 0},
+        {"name": "Papas Margarita de limón ","unit_price": 1500,"stock": 1},
+        {"name": "Meat / Pound","unit_price": 500,"stock": 8}
     ]
 }
